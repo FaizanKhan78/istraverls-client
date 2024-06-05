@@ -12,7 +12,7 @@ const InvoiceTable = ( { users } ) =>
   const dispatch = useDispatch();
   const checkOut = async ( user ) =>
   {
-    const { data: { key } } = await axios.get( "http://localhost:9000/api/getkey" );
+    const { data: { key } } = await axios.get( import.meta.env.VIT_API + "/api/getkey" );
     const { data: { order } } = await axios.post( import.meta.env.VITE_USER_API + "/checkout",
       users
     );
