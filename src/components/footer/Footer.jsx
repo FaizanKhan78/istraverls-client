@@ -106,7 +106,7 @@ const Footer = () =>
             } )
           }
         </div>
-        <div className='text-center text-white flex justify-center items-center' >
+        <div className='text-center text-white flex justify-center items-center mobile:hidden' >
           {
             array.map( ( char, i ) =>
             {

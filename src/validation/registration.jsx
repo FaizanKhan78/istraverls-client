@@ -48,8 +48,4 @@ export const registerSchema = Yup.object( {
     .max( 3, "STD should be less than 3 characters" )
     .required( "Please Enter STD" ),
 
-  alternate_number: Yup.string()
-    .matches( /^\d{10}$/, "Alternate Number should be exactly 10 digits long and only contain numbers" )
-    .min( 10, "Alternate Number should be 10 digits" )
-    .max( 10, "Alternate Number should be 10 digits" )
 } );
