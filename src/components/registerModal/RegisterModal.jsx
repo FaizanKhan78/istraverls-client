@@ -122,7 +122,7 @@ const RegisterModal = ( { closeModal } ) =>
               </div>
 
               <div className="relative">
-                <input type="text" name="alternate_number"
+                <input type="tel" name="alternate_number"
                   value={ values.alternate_number } onBlur={ handleBlur } onChange={ handleChange } id="alternate_number" className={ InputAnimation } placeholder=" " />
                 <label htmlFor="alternate_number" className={ Label }>Alternate Number</label>
               </div>
