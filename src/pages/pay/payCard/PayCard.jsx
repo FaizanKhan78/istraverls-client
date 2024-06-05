@@ -73,15 +73,15 @@ const InvoiceTable = ( { users } ) =>
           users.map( ( user, i ) =>
           {
             return (
-              <motion.div className='bg-[#010101] text-white font-myFont p-8 mt-10 rounded-lg w-fit' key={ i }>
+              <motion.div className='bg-[#010101] text-white font-myFont mobile:mb-10 p-8 mt-10 rounded-lg w-fit' key={ i }>
                 <div className='flex justify-between'>
                   <h1 className='text-lg'>Pay <span className='text-[#9FA6B2]'>ID : { user.id }</span></h1>
                   <h1 className='text-lg'>Route <span className='text-[#9FA6B2]'>: { user.route }</span></h1>
                 </div>
                 <h1 className='text-2xl pt-10'>{ user.student_name }</h1>
 
-                <div className='flex mt-4 gap-20'>
-                  <div className='flex gap-4'>
+                <div className='flex mt-4 gap-20 mobile:flex-col'>
+                  <div className='flex gap-4 mobile:gap-12'>
                     <div>
                       <h1 className='text-xl'>Starting Date</h1>
                       <h1 className='text-xl text-[#9FA6B2]'>{ dayjs( user.start_date ).format( 'DD MMMM YYYY' ) }</h1>
@@ -105,7 +105,7 @@ const InvoiceTable = ( { users } ) =>
                 </div>
 
                 <div className='flex mt-4 gap-20'>
-                  <div className='flex gap-4'>
+                  <div className='flex gap-4 mobile:gap-12'>
                     <div>
                       <h1 className='text-xl'>Pending Amt</h1>
                       <h1 className='text-xl text-[#9FA6B2]'>{ user.pending_amount }</h1>

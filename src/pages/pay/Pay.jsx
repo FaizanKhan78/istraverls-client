@@ -70,9 +70,9 @@ const Invoice = () =>
       <ContentWrapper>
         <h1 className="flex justify-center items-center text-animation text-6xl font-myFont">Pay</h1>
         <div className="text-white flex flex-col h-screen mt-10" data-scroll-container>
-          <motion.div variants={ containerVars } initial="initial" animate="open" className="overflow-hidden flex justify-between text-white mobile:flex-col" data-scroll-section>
+          <motion.div variants={ containerVars } initial="initial" animate="open" className="overflow-hidden tablet:overflow-visible mobile:overflow-visible flex tablet:flex-col justify-between text-white mobile:flex-col tablet:gap-4" data-scroll-section>
             <div className="flex flex-col gap-6 mobile:gap-2 font-myFont">
-              <motion.h1 variants={ mobileLinksVars } className="text-5xl mobile:text-2xl">Billed To : { users[ 0 ]?.mobile_number }</motion.h1>
+              <motion.h1 variants={ mobileLinksVars } className="text-5xl mobile:text-2xl tablet:text-3xl">Billed To : { users[ 0 ]?.mobile_number }</motion.h1>
               <motion.div variants={ mobileLinksVars } className="flex  text-3xl mobile:text-xl">
                 <motion.h1 variants={ mobileLinksVars }>Pick Up Address : &nbsp;</motion.h1>  { users[ 0 ]?.pick_up_address }
               </motion.div>
@@ -81,10 +81,10 @@ const Invoice = () =>
               </motion.div>
             </div>
 
-            <div className="flex flex-col gap-6 mobile:gap-2 mobile:mt-3 items-end mobile:items-start font-myFont">
-              <motion.h1 variants={ mobileLinksVars } className="text-5xl mobile:text-xl ">Society : { users[ 0 ]?.society }</motion.h1>
+            <div className="flex flex-col gap-6 mobile:gap-2 mobile:mt-3 items-end mobile:items-start font-myFont tablet:items-start">
+              <motion.h1 variants={ mobileLinksVars } className="text-5xl mobile:text-xl tablet:text-3xl">Society : { users[ 0 ]?.society }</motion.h1>
               <motion.div variants={ mobileLinksVars } className="flex  text-3xl mobile:text-xl">
-                <motion.h1 variants={ mobileLinksVars }>Area : &nbsp;</motion.h1>  { users[ 0 ]?.area }
+                <motion.h1 variants={ mobileLinksVars }>Area : &nbsp;</motion.h1>  { users[ 0 ]?.area.charAt( 0 ).toUpperCase() + users[ 0 ]?.area.slice( 1 ).toLowerCase() }
               </motion.div>
               <motion.div variants={ mobileLinksVars } className="flex  text-3xl mobile:text-xl">
                 <motion.h1 variants={ mobileLinksVars }>Time : &nbsp;</motion.h1>  { users[ 0 ]?.time }
