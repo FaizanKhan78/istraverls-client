@@ -12,7 +12,8 @@ export default {
       },
       screens: {
         'tablet': { 'max': "1020px" },
-        'mobile': { 'max': "720px" }
+        'mobile': { 'max': "720px" },
+        'iphone-se': { 'max': '375px' }
       },
       colors: {
         background: "#071108"

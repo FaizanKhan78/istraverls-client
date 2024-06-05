@@ -152,7 +152,7 @@ const RegisterModal = ( { closeModal } ) =>
             </div>
 
             <div className="relative my-3">
-              <input type="tel" name="society"
+              <input type="text" name="society"
                 value={ values.society } onChange={ handleChange } onBlur={ handleBlur } id="society" className={ InputAnimation } placeholder=" " required />
               <label htmlFor="society" className={ Label }>SOCIETY*</label>
               { errors.society && touched.society ? <p className=' text-red-600 mt-1'>{ errors.society }</p> : null }
@@ -167,7 +167,7 @@ const RegisterModal = ( { closeModal } ) =>
               </div>
 
               <div className="relative">
-                <input type="tel" name="div"
+                <input type="text" name="div"
                   value={ values.div } onChange={ handleChange } onBlur={ handleBlur } id="div" className={ InputAnimation } placeholder=" " required />
                 <label htmlFor="div" className={ Label }>DIV*</label>
                 { errors.div && touched.div ? <p className=' text-red-600 mt-1'>{ errors.div }</p> : null }

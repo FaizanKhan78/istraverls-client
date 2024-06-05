@@ -62,7 +62,7 @@ const FAQ = () =>
 
   return (
     <ContentWrapper>
-      <div className=" flex justify-center flex-col my-20 mobile:mt-0 tablet:mb-0 items-center" data-scroll-section>
+      <div className=" flex justify-center flex-col my-20 mobile:mt-0 tablet:mb-0 items-center  iphone-se:mt-[35%]" data-scroll-section>
         <motion.h1
           variants={ fadeInAnimationVariants } initial="initial" whileInView="animate" viewport={ {
             once: true,

@@ -37,7 +37,7 @@ const About = () =>
   ];
   return (
     <ContentWrapper>
-      <div className="h-screen flex items-center justify-between w-full" data-scroll-section>
+      <div className="h-screen flex items-center justify-between w-full iphone-se:mt-[30%]" data-scroll-section>
         {/* Left */ }
         <motion.div className="tablet:hidden" variants={ fadeInAnimationVariants } initial="initial" whileInView="animate" viewport={ {
           once: true,
