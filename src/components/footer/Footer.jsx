@@ -3,7 +3,6 @@ import { NavLink } from 'react-router-dom';
 import AnimateLink from '../animate/AnimateLink';
 import ContentWrapper from './../contentWrapper/ContentWrapper';
 import { Facebook, Instagram, Twitch, Twitter, Youtube } from 'lucide-react';
-import Button from '../button/Button';
 import { motion } from 'framer-motion';
 const Footer = () =>
 {
@@ -60,7 +59,7 @@ const Footer = () =>
 
   return (
     <ContentWrapper>
-      <div className="h-[60vh] text-white tablet:h-[40vh] mobile:h-[50vh] font-myFont px-20 mobile:px-0 tracking-wider" data-scroll-section>
+      <div className="h-[60vh] text-white tablet:h-[40vh] mobile:h-[40vh] font-myFont px-20 mobile:px-0 tracking-wider iphone-se:h-[40vh]" data-scroll-section>
         <footer className='flex justify-between items-center tablet:justify-evenly mobile:flex-col'>
           <div className='mobile:mb-5'>
             <motion.h1 className='text-6xl font-custom tracking-wider text-animation tablet:text-3xl' variants={ fadeInAnimationVariants } initial="initial" whileInView="animate" viewport={ { once: true } }>ISTRAVELS.</motion.h1>
