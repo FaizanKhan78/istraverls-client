@@ -1,5 +1,4 @@
 import { useFormik } from 'formik';
-import { AnimatePresence, motion } from 'framer-motion';
 import { loginSchema } from '../../validation/login';
 import Button from './../button/Button';
 import { Eye, EyeOff } from 'lucide-react';

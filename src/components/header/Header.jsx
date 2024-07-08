@@ -123,6 +123,7 @@ const Header = () =>
     setLoginModal( !loginModal );
   };
 
+  console.log( loginModal );
   const handleModal = () =>
   {
     setModal( !modal );
